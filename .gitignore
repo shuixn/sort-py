@@ -1,3 +1,6 @@
+# VsCode
+.vscode
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -127,4 +130,3 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
->>>>>>> f591ea80164fa90f9644935d5b616dad166349a5
