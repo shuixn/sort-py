@@ -1,6 +1,9 @@
 # VsCode
 .vscode
 
+# Git
+gifs/*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
