@@ -29,6 +29,7 @@ class CaculateTime:
 
 class Base:
     length = 0
+    process = []
 
     def __init__(self, length: int = 10):
         self.length = length
@@ -45,7 +46,9 @@ class Base:
     def print_list(self, title: str, list: List[int]) -> None:
         print(title + ', ' . join('%s' % id for id in list))
 
-    
+    def save_animate(self):
+        animate = Animate()
+        animate.save(self.process, self.__class__.__name__)
 
     def main(self, length: int = 10):
         self.length = length
@@ -59,7 +62,11 @@ class Animate:
         for rect, yi in zip(self.rects, self.data[i]):
             rect.set_color('b')
             rect.set_height(yi)
-            rect.set_label(yi)
+            
+            # x = [i for i in range(len(self.data[0]))]
+            # for a,b in zip(x, self.data[i]):
+            #     plt.text(a, b+0.05, b, ha='center', va= 'bottom',fontsize=11)
+
             diff_nums = self.get_diff_nums(i)
             if diff_nums:
                 if yi in diff_nums:

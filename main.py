@@ -16,8 +16,10 @@ if __name__ == "__main__":
     L = baseUtils.generator()
     baseUtils.print_list('List: ', L)
 
-    sort = BubbleSort(length)
-    sort.print_list('BubbleSort: ', sort.execute(L))
+    # sort = BubbleSort(length)
+    # sort.print_list('BubbleSort: ', sort.execute(L))
+    # sort.save_animate()
 
     sort = InsertionSort(length)
     sort.print_list('InsertionSort: ', sort.execute(L))
+    sort.save_animate()
