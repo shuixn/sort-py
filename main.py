@@ -8,6 +8,7 @@ import sys
 from sorts.base import Base as BaseUtils
 from sorts.bubble_sort import BubbleSort
 from sorts.insertion_sort import InsertionSort
+from sorts.cocktail_sort import CocktailSort
 
 if __name__ == "__main__":
     length = int(sys.argv[1]) if len(sys.argv) > 1 and int(sys.argv[1]) > 0 else 10
@@ -20,6 +21,10 @@ if __name__ == "__main__":
     # sort.print_list('BubbleSort: ', sort.execute(L))
     # sort.save_animate()
 
-    sort = InsertionSort(length)
-    sort.print_list('InsertionSort: ', sort.execute(L))
+    # sort = InsertionSort(length)
+    # sort.print_list('InsertionSort: ', sort.execute(L))
+    # sort.save_animate()
+
+    sort = CocktailSort(length)
+    sort.print_list('CocktailSort: ', sort.execute(L))
     sort.save_animate()
