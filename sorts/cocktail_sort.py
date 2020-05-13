@@ -22,7 +22,7 @@ class CocktailSort(Base):
         for i in range(len(L) // 2):
             if flag:
                 flag = False
-                for j in range(i,len(L) - i - 1):
+                for j in range(i, len(L) - i - 1):
                     if L[j] > L[j+1]:
                         L[j], L[j+1] = L[j+1], L[j]
                         flag = True
