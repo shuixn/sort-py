@@ -12,6 +12,7 @@ from sorts.cocktail_sort import CocktailSort
 from sorts.bucket_sort import BucketSort
 from sorts.counting_sort import CountingSort
 from sorts.quick_sort import QuickSort
+from sorts.merge_sort import MergeSort
 
 if __name__ == "__main__":
     length = int(sys.argv[1]) if len(sys.argv) > 1 and int(sys.argv[1]) > 0 else 10
@@ -38,6 +39,10 @@ if __name__ == "__main__":
     # sort = CountingSort(length)
     # sort.print_list('CountingSort: ', sort.execute(L))
 
-    sort = QuickSort(length)
-    sort.print_list('QueueSort: ', sort.execute(L))
-    sort.save_animate()
+    # sort = QuickSort(length)
+    # sort.print_list('QueueSort: ', sort.execute(L))
+    # sort.save_animate()
+
+    sort = MergeSort(length)
+    sort.print_list('MergeSort: ', sort.execute(L))
+    # sort.save_animate()
